@@ -12,6 +12,7 @@
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
 		2E2C680B1C0E22B400641874 /* MovielandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C680A1C0E22B400641874 /* MovielandTests.swift */; };
 		2E2C68161C0E22B400641874 /* MovielandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C68151C0E22B400641874 /* MovielandUITests.swift */; };
+		E68C12761B7E6D5F0AA3227D /* Pods_MovielandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,9 @@
 		2E2C68111C0E22B400641874 /* MovielandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovielandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C68151C0E22B400641874 /* MovielandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovielandUITests.swift; sourceTree = "<group>"; };
 		2E2C68171C0E22B400641874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovielandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		603262157CAE4E4D07A89788 /* Pods-MovielandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovielandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests.release.xcconfig"; sourceTree = "<group>"; };
+		F1913698F8A64EAEC755DD73 /* Pods-MovielandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovielandTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E68C12761B7E6D5F0AA3227D /* Pods_MovielandTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,8 @@
 				2E2C68091C0E22B400641874 /* MovielandTests */,
 				2E2C68141C0E22B400641874 /* MovielandUITests */,
 				2E2C67F31C0E22B400641874 /* Products */,
+				96D63836D0E924D8AA34F366 /* Pods */,
+				716E894F312230A62BB6577A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +126,23 @@
 			path = MovielandUITests;
 			sourceTree = "<group>";
 		};
+		716E894F312230A62BB6577A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96D63836D0E924D8AA34F366 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1913698F8A64EAEC755DD73 /* Pods-MovielandTests.debug.xcconfig */,
+				603262157CAE4E4D07A89788 /* Pods-MovielandTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E2C681D1C0E22B400641874 /* Build configuration list for PBXNativeTarget "MovielandTests" */;
 			buildPhases = (
+				D48E3C8997EA603706D30C30 /* Check Pods Manifest.lock */,
 				2E2C68021C0E22B400641874 /* Sources */,
 				2E2C68031C0E22B400641874 /* Frameworks */,
 				2E2C68041C0E22B400641874 /* Resources */,
+				438A3EC39C896C229012C8AD /* Embed Pods Frameworks */,
+				1D7B0549CB8A2870824CE367 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,6 +270,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D7B0549CB8A2870824CE367 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		438A3EC39C896C229012C8AD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D48E3C8997EA603706D30C30 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E2C67EE1C0E22B400641874 /* Sources */ = {
@@ -401,6 +476,7 @@
 		};
 		2E2C681E1C0E22B400641874 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1913698F8A64EAEC755DD73 /* Pods-MovielandTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MovielandTests/Info.plist;
@@ -413,6 +489,7 @@
 		};
 		2E2C681F1C0E22B400641874 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 603262157CAE4E4D07A89788 /* Pods-MovielandTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MovielandTests/Info.plist;
@@ -466,6 +543,7 @@
 				2E2C681C1C0E22B400641874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E2C681D1C0E22B400641874 /* Build configuration list for PBXNativeTarget "MovielandTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +552,7 @@
 				2E2C681F1C0E22B400641874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E2C68201C0E22B400641874 /* Build configuration list for PBXNativeTarget "MovielandUITests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +561,7 @@
 				2E2C68221C0E22B400641874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
