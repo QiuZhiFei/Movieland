@@ -25,3 +25,5 @@ xcuserdata
 *.hmap
 *.ipa
 report.xml
+report.html
+report.junit
