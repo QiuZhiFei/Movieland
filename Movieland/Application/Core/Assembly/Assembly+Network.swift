@@ -14,7 +14,7 @@ extension Assembly {
     
     func getTMDBHttpClient() -> HTTPClient {
         let httpClient = AlamofireHTTPClient(
-            baseURL: TMDBMovieMediaServiceApiDefinition.ApiBaseUrl().path,
+            baseURL: TMDBMovieMediaServiceApiDefinition.ApiBaseUrl.path,
             requestBuilder: getHttpRequestBuilder()
         )
         httpClient.requestProcessors = [

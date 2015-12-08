@@ -9,16 +9,20 @@
 import Foundation
 
 enum TMDBMovieMediaServiceApiDefinition {
-    
-    case Search(query: String)
+    case ApiBaseUrl
+    case Search
 }
 
 extension TMDBMovieMediaServiceApiDefinition {
     var path: String {
         
         switch self {
-        case .Search(let query):
-            return "search/movie?query=\(query)"
+        
+        case .ApiBaseUrl:
+            return "https://api.themoviedb.org/3/"
+        
+        case .Search:
+            return "search/movie"
         }
     }
 }
