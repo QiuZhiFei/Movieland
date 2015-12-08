@@ -37,6 +37,14 @@
 		2E3703BA1C0E26B1002E70A2 /* DefaultServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3703B91C0E26B1002E70A2 /* DefaultServiceLocator.swift */; };
 		2E3703C11C0E2C3A002E70A2 /* DefaultServiceLocatorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3703C01C0E2C3A002E70A2 /* DefaultServiceLocatorSpec.swift */; };
 		2E3A7D181C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D171C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift */; };
+		2E3A7D1D1C16FB6600F62D62 /* Assembly+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D1C1C16FB6600F62D62 /* Assembly+Network.swift */; };
+		2E3A7D211C16FCE800F62D62 /* TMDBRequestProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D201C16FCE800F62D62 /* TMDBRequestProcessor.swift */; };
+		2E3A7D231C16FF1B00F62D62 /* Assembly+MediaServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D221C16FF1B00F62D62 /* Assembly+MediaServices.swift */; };
+		2E3A7D251C16FFF900F62D62 /* Assembly+Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D241C16FFF900F62D62 /* Assembly+Repositories.swift */; };
+		2E3A7D271C17006D00F62D62 /* Assembly+Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */; };
+		2E3A7D291C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D281C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift */; };
+		2E3A7D2D1C17062C00F62D62 /* Dictionary+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D2C1C17062C00F62D62 /* Dictionary+Extended.swift */; };
+		2E3A7D311C170D9000F62D62 /* DictionaryExtendedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D301C170D9000F62D62 /* DictionaryExtendedSpec.swift */; };
 		E68C12761B7E6D5F0AA3227D /* Pods_MovielandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */; };
 		EEAED3B0DBE62FF1DDFF81A2 /* Pods_Movieland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FF7DF0B26CB244E430CA83 /* Pods_Movieland.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +103,14 @@
 		2E3703B91C0E26B1002E70A2 /* DefaultServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultServiceLocator.swift; sourceTree = "<group>"; };
 		2E3703C01C0E2C3A002E70A2 /* DefaultServiceLocatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultServiceLocatorSpec.swift; sourceTree = "<group>"; };
 		2E3A7D171C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieMediaServiceSearchApiDataSource.swift; sourceTree = "<group>"; };
+		2E3A7D1C1C16FB6600F62D62 /* Assembly+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Network.swift"; sourceTree = "<group>"; };
+		2E3A7D201C16FCE800F62D62 /* TMDBRequestProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBRequestProcessor.swift; sourceTree = "<group>"; };
+		2E3A7D221C16FF1B00F62D62 /* Assembly+MediaServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+MediaServices.swift"; sourceTree = "<group>"; };
+		2E3A7D241C16FFF900F62D62 /* Assembly+Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Repositories.swift"; sourceTree = "<group>"; };
+		2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Parsers.swift"; sourceTree = "<group>"; };
+		2E3A7D281C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieMediaServiceSearchApiParser.swift; sourceTree = "<group>"; };
+		2E3A7D2C1C17062C00F62D62 /* Dictionary+Extended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extended.swift"; sourceTree = "<group>"; };
+		2E3A7D301C170D9000F62D62 /* DictionaryExtendedSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtendedSpec.swift; sourceTree = "<group>"; };
 		3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovielandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FF7DF0B26CB244E430CA83 /* Pods_Movieland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movieland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603262157CAE4E4D07A89788 /* Pods-MovielandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovielandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +149,7 @@
 		2E1D4ADD1C16652C00D474F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2E3A7D2A1C17060700F62D62 /* Extensions */,
 				2E1D4ADE1C16652C00D474F0 /* Test Utils */,
 			);
 			path = Common;
@@ -149,6 +166,7 @@
 		2E1D4AE11C1665B200D474F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2E3A7D2E1C170D6700F62D62 /* Extensions */,
 				2E1D4AE21C1665B200D474F0 /* Test Utils */,
 			);
 			name = Common;
@@ -285,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				2E1D4B1B1C16800E00D474F0 /* TMDBMovieMediaService.swift */,
+				2E3A7D191C16FAF200F62D62 /* Domain */,
 				2E1D4B1D1C1682EE00D474F0 /* Repository */,
 				2E1D4B211C16837700D474F0 /* Data Source */,
 			);
@@ -393,6 +412,10 @@
 			isa = PBXGroup;
 			children = (
 				2E3703B21C0E2515002E70A2 /* Assembly.swift */,
+				2E3A7D1C1C16FB6600F62D62 /* Assembly+Network.swift */,
+				2E3A7D221C16FF1B00F62D62 /* Assembly+MediaServices.swift */,
+				2E3A7D241C16FFF900F62D62 /* Assembly+Repositories.swift */,
+				2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -446,6 +469,71 @@
 				2E3A7D171C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		2E3A7D191C16FAF200F62D62 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D1E1C16FCC500F62D62 /* Network */,
+				2E3A7D1B1C16FAF200F62D62 /* Parser */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2E3A7D1B1C16FAF200F62D62 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D281C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		2E3A7D1E1C16FCC500F62D62 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D1F1C16FCCC00F62D62 /* Request Processor */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E3A7D1F1C16FCCC00F62D62 /* Request Processor */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D201C16FCE800F62D62 /* TMDBRequestProcessor.swift */,
+			);
+			path = "Request Processor";
+			sourceTree = "<group>";
+		};
+		2E3A7D2A1C17060700F62D62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D2B1C17061100F62D62 /* Dictionary */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E3A7D2B1C17061100F62D62 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D2C1C17062C00F62D62 /* Dictionary+Extended.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		2E3A7D2E1C170D6700F62D62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D2F1C170D6F00F62D62 /* Dictionary */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2E3A7D2F1C170D6F00F62D62 /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				2E3A7D301C170D9000F62D62 /* DictionaryExtendedSpec.swift */,
+			);
+			path = Dictionary;
 			sourceTree = "<group>";
 		};
 		716E894F312230A62BB6577A /* Frameworks */ = {
@@ -698,10 +786,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E1D4B1F1C16831F00D474F0 /* TMDBMovieMediaServiceRepository.swift in Sources */,
+				2E3A7D231C16FF1B00F62D62 /* Assembly+MediaServices.swift in Sources */,
 				2E3703BA1C0E26B1002E70A2 /* DefaultServiceLocator.swift in Sources */,
 				2E3703B51C0E25AC002E70A2 /* ServiceLocator.swift in Sources */,
 				2E1D4B181C167D5F00D474F0 /* Movie.swift in Sources */,
+				2E3A7D2D1C17062C00F62D62 /* Dictionary+Extended.swift in Sources */,
 				2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */,
+				2E3A7D211C16FCE800F62D62 /* TMDBRequestProcessor.swift in Sources */,
 				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
 				2E3A7D181C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift in Sources */,
 				2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */,
@@ -711,13 +802,17 @@
 				2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */,
 				2E1D4AEA1C16686F00D474F0 /* HTTPRequest.swift in Sources */,
 				2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */,
+				2E3A7D271C17006D00F62D62 /* Assembly+Parsers.swift in Sources */,
+				2E3A7D1D1C16FB6600F62D62 /* Assembly+Network.swift in Sources */,
 				2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */,
 				2E3703B31C0E2515002E70A2 /* Assembly.swift in Sources */,
 				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
 				2E1D4B1C1C16800E00D474F0 /* TMDBMovieMediaService.swift in Sources */,
 				2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */,
 				2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */,
+				2E3A7D251C16FFF900F62D62 /* Assembly+Repositories.swift in Sources */,
 				2E1D4B0E1C16726300D474F0 /* AppDelegate.swift in Sources */,
+				2E3A7D291C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift in Sources */,
 				2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -731,6 +826,7 @@
 				2E3703C11C0E2C3A002E70A2 /* DefaultServiceLocatorSpec.swift in Sources */,
 				2E1D4B021C166CF000D474F0 /* AlamofireHTTPRequestBuilderSpec.swift in Sources */,
 				2E1D4B041C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift in Sources */,
+				2E3A7D311C170D9000F62D62 /* DictionaryExtendedSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

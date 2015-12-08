@@ -13,6 +13,10 @@ protocol TMDBMovieMediaServiceSearchApiDataSourceProvider {
     func dataSource() -> TMDBMovieMediaServiceSearchApiDataSource
 }
 
+private struct Parameters {
+    static let query = "query"
+}
+
 struct TMDBMovieMediaServiceSearchApiDataSource {
     
     let httpClient: HTTPClient
@@ -25,8 +29,10 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
     
     func search(query: String, searchResults: MovieMediaServiceSearchResult) {
         
-        let path = TMDBMovieMediaServiceApiDefinition.Search(query: query).path
-        let request = httpClient.GET(path)
+        let path = TMDBMovieMediaServiceApiDefinition.Search.path
+        let request = httpClient.GET(path).parameters([
+            Parameters.query : query
+        ])
         
         httpClient.execute(request) { (requestResult) in
             
