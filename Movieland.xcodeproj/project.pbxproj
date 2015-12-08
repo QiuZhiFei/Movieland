@@ -21,6 +21,8 @@
 		2E1D4B001C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AFF1C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift */; };
 		2E1D4B021C166CF000D474F0 /* AlamofireHTTPRequestBuilderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B011C166CF000D474F0 /* AlamofireHTTPRequestBuilderSpec.swift */; };
 		2E1D4B041C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B031C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift */; };
+		2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B071C1670DC00D474F0 /* Parseable.swift */; };
+		2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B091C1670E800D474F0 /* Model.swift */; };
 		2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C67F51C0E22B400641874 /* AppDelegate.swift */; };
 		2E2C67FD1C0E22B400641874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FC1C0E22B400641874 /* Assets.xcassets */; };
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
@@ -65,6 +67,8 @@
 		2E1D4AFF1C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestSpec.swift; sourceTree = "<group>"; };
 		2E1D4B011C166CF000D474F0 /* AlamofireHTTPRequestBuilderSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestBuilderSpec.swift; sourceTree = "<group>"; };
 		2E1D4B031C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClientSpec.swift; sourceTree = "<group>"; };
+		2E1D4B071C1670DC00D474F0 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
+		2E1D4B091C1670E800D474F0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2E2C67F21C0E22B400641874 /* Movieland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movieland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C67F51C0E22B400641874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C67FC1C0E22B400641874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2E1D4AE61C16682600D474F0 /* Network Client */,
+				2E1D4B061C1670CF00D474F0 /* Parser */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -203,6 +208,15 @@
 				2E1D4B011C166CF000D474F0 /* AlamofireHTTPRequestBuilderSpec.swift */,
 			);
 			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		2E1D4B061C1670CF00D474F0 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B071C1670DC00D474F0 /* Parseable.swift */,
+				2E1D4B091C1670E800D474F0 /* Model.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 		2E2C67E91C0E22B400641874 = {
@@ -583,6 +597,7 @@
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
 				2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */,
+				2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */,
 				2E1D4AEA1C16686F00D474F0 /* HTTPRequest.swift in Sources */,
 				2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */,
 				2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */,
@@ -590,6 +605,7 @@
 				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
 				2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */,
 				2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */,
+				2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
