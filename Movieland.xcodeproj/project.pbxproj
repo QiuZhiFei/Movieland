@@ -23,7 +23,7 @@
 		2E1D4B041C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B031C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift */; };
 		2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B071C1670DC00D474F0 /* Parseable.swift */; };
 		2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B091C1670E800D474F0 /* Model.swift */; };
-		2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C67F51C0E22B400641874 /* AppDelegate.swift */; };
+		2E1D4B0E1C16726300D474F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */; };
 		2E2C67FD1C0E22B400641874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FC1C0E22B400641874 /* Assets.xcassets */; };
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
 		2E2C68161C0E22B400641874 /* MovielandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C68151C0E22B400641874 /* MovielandUITests.swift */; };
@@ -69,8 +69,8 @@
 		2E1D4B031C166DBC00D474F0 /* AlamofireHTTPClientSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClientSpec.swift; sourceTree = "<group>"; };
 		2E1D4B071C1670DC00D474F0 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
 		2E1D4B091C1670E800D474F0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C67F21C0E22B400641874 /* Movieland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movieland.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2C67F51C0E22B400641874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C67FC1C0E22B400641874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2C67FF1C0E22B400641874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E2C68011C0E22B400641874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -219,6 +219,14 @@
 			path = Parser;
 			sourceTree = "<group>";
 		};
+		2E1D4B0C1C16726300D474F0 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
 		2E2C67E91C0E22B400641874 = {
 			isa = PBXGroup;
 			children = (
@@ -244,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				2E3703AE1C0E2504002E70A2 /* Application */,
-				2E2C67F51C0E22B400641874 /* AppDelegate.swift */,
 				2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */,
 				2E2C68011C0E22B400641874 /* Info.plist */,
 				2E2C67FC1C0E22B400641874 /* Assets.xcassets */,
@@ -274,6 +281,7 @@
 		2E3703AE1C0E2504002E70A2 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2E1D4B0C1C16726300D474F0 /* App Delegate */,
 				2E3703AF1C0E2504002E70A2 /* Core */,
 				2E1D4ADD1C16652C00D474F0 /* Common */,
 			);
@@ -596,7 +604,6 @@
 				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
-				2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */,
 				2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */,
 				2E1D4AEA1C16686F00D474F0 /* HTTPRequest.swift in Sources */,
 				2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */,
@@ -605,6 +612,7 @@
 				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
 				2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */,
 				2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */,
+				2E1D4B0E1C16726300D474F0 /* AppDelegate.swift in Sources */,
 				2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
