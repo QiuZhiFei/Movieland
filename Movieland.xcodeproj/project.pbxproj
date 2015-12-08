@@ -18,6 +18,7 @@
 		2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */; };
 		2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */; };
 		2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */; };
+		2E1D4B001C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AFF1C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift */; };
 		2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C67F51C0E22B400641874 /* AppDelegate.swift */; };
 		2E2C67FD1C0E22B400641874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FC1C0E22B400641874 /* Assets.xcassets */; };
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
@@ -59,6 +60,7 @@
 		2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequest.swift; sourceTree = "<group>"; };
 		2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestBuilder.swift; sourceTree = "<group>"; };
 		2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPResponse.swift; sourceTree = "<group>"; };
+		2E1D4AFF1C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestSpec.swift; sourceTree = "<group>"; };
 		2E2C67F21C0E22B400641874 /* Movieland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movieland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C67F51C0E22B400641874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C67FC1C0E22B400641874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,6 +175,30 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+		2E1D4AFA1C166C2600D474F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4AFB1C166C2600D474F0 /* Network Client */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E1D4AFB1C166C2600D474F0 /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4AFC1C166C2600D474F0 /* Alamofire */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		2E1D4AFC1C166C2600D474F0 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4AFF1C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
 		2E2C67E91C0E22B400641874 = {
 			isa = PBXGroup;
 			children = (
@@ -273,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				2E3703B81C0E26A2002E70A2 /* Service Locator */,
+				2E1D4AFA1C166C2600D474F0 /* Network */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -564,6 +591,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1D4B001C166C6A00D474F0 /* AlamofireHTTPRequestSpec.swift in Sources */,
 				2E1D4AE41C1665D500D474F0 /* TestEnviromentDetectorSpec.swift in Sources */,
 				2E3703C11C0E2C3A002E70A2 /* DefaultServiceLocatorSpec.swift in Sources */,
 			);
