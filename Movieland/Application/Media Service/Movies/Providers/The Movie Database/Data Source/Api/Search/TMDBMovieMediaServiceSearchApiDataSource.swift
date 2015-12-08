@@ -1,5 +1,5 @@
 //
-//  TMDBMovieMediaServiceApiDataSource.swift
+//  TMDBMovieMediaServiceSearchApiDataSource.swift
 //  Movieland
 //
 //  Created by Oscar Duran on 8/12/15.
@@ -9,7 +9,11 @@
 import Foundation
 import Result
 
-struct TMDBMovieMediaServiceApiDataSource: MovieMediaService {
+protocol TMDBMovieMediaServiceSearchApiDataSourceProvider {
+    func dataSource() -> TMDBMovieMediaServiceSearchApiDataSource
+}
+
+struct TMDBMovieMediaServiceSearchApiDataSource {
     
     let httpClient: HTTPClient
     let parser: Parseable
@@ -32,7 +36,7 @@ struct TMDBMovieMediaServiceApiDataSource: MovieMediaService {
                 )
                 return
             }
-            
+
             print(response)
         }
     }

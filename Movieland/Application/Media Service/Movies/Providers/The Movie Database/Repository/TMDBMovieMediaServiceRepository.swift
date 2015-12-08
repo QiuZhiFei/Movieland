@@ -10,13 +10,13 @@ import Foundation
 
 struct TMDBMovieMediaServiceRepository: MovieMediaService {
     
-    let dataSource: MovieMediaService
+    let searchDataSourceProvider: TMDBMovieMediaServiceSearchApiDataSourceProvider
     
-    init(dataSource: MovieMediaService) {
-        self.dataSource = dataSource
+    init(searchDataSourceProvider: TMDBMovieMediaServiceSearchApiDataSourceProvider) {
+        self.searchDataSourceProvider = searchDataSourceProvider
     }
     
     func search(query: String, searchResults: MovieMediaServiceSearchResult) {
-        dataSource.search(query, searchResults: searchResults)
+        searchDataSourceProvider.dataSource().search(query, searchResults: searchResults)
     }
 }
