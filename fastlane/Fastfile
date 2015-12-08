@@ -1,13 +1,11 @@
 # Change the syntax highlighting to Ruby
 # All lines starting with a # are ignored when running `fastlane`
 
-fastlane_version "1.42.0"
-
 default_platform :ios
 
 APP_WORKSPACE = "Movieland.xcworkspace"
 APP_SCHEME = "Movieland"
-APP_TEST_SCHEME = "Movieland"
+APP_TEST_SCHEME = "MovielandTests"
 
 platform :ios do
   before_all do
@@ -15,11 +13,11 @@ platform :ios do
  
   desc "Runs all the tests"
   lane :test do
-    scan(
-        workspace: APP_WORKSPACE,
-        scheme: APP_TEST_SCHEME,
-        open_report: false
-      )
+    xctest(
+      destination: "name=iPhone 5s,OS=8.1",
+      scheme: APP_TEST_SCHEME,
+      destination_timeout: 120
+    )
   end
 
   after_all do |lane|
