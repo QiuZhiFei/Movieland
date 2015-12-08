@@ -12,17 +12,17 @@ protocol HTTPRequestBuilder {
     /**
      Build the request
      
-     - parameter method: request method
+     - parameter httpRequestMethod: request method
      - parameter url:  url to make the request
      
      - returns: HTTP request instance
      */
-    func build(with method: HTTPRequestMethod, url: NSURL) -> HTTPRequest
+    func build(with httpRequestMethod: HTTPRequestMethod, url: NSURL) -> HTTPRequest
     
     /**
      Generate the NSURLRequest with all the information for the request
      
-     - parameter method:     request method
+     - parameter httpRequestMethod:     request method
      - parameter url:        url to make the request
      - parameter parameters: list of http parameters
      - parameter headers:    dictionary with the request headers
@@ -30,5 +30,5 @@ protocol HTTPRequestBuilder {
      
      - returns: a new initialized NSURLRequest instance
      */
-    func generateURLRequest(method: HTTPRequestMethod, url: NSURL, parameters: [String: AnyObject], headers: [String: String], body: NSData?) -> NSURLRequest
+    func generateURLRequest(httpRequestMethod: HTTPRequestMethod, url: NSURL, parameters: [String: AnyObject], headers: [String: String], body: NSData?) -> NSURLRequest
 }

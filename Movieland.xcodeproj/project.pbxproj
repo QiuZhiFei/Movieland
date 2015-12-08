@@ -14,6 +14,10 @@
 		2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AEB1C16687B00D474F0 /* HTTPRequestBuilder.swift */; };
 		2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AED1C16688400D474F0 /* HTTPResponse.swift */; };
 		2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AEF1C16688F00D474F0 /* HTTPProcessor.swift */; };
+		2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */; };
+		2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */; };
+		2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */; };
+		2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */; };
 		2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C67F51C0E22B400641874 /* AppDelegate.swift */; };
 		2E2C67FD1C0E22B400641874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FC1C0E22B400641874 /* Assets.xcassets */; };
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
@@ -51,6 +55,10 @@
 		2E1D4AEB1C16687B00D474F0 /* HTTPRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequestBuilder.swift; sourceTree = "<group>"; };
 		2E1D4AED1C16688400D474F0 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
 		2E1D4AEF1C16688F00D474F0 /* HTTPProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPProcessor.swift; sourceTree = "<group>"; };
+		2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
+		2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequest.swift; sourceTree = "<group>"; };
+		2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestBuilder.swift; sourceTree = "<group>"; };
+		2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPResponse.swift; sourceTree = "<group>"; };
 		2E2C67F21C0E22B400641874 /* Movieland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movieland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C67F51C0E22B400641874 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2E2C67FC1C0E22B400641874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,8 +157,20 @@
 				2E1D4AEB1C16687B00D474F0 /* HTTPRequestBuilder.swift */,
 				2E1D4AED1C16688400D474F0 /* HTTPResponse.swift */,
 				2E1D4AEF1C16688F00D474F0 /* HTTPProcessor.swift */,
+				2E1D4AF11C1669E800D474F0 /* Alamofire */,
 			);
 			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		2E1D4AF11C1669E800D474F0 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */,
+				2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */,
+				2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */,
+				2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */,
+			);
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 		2E2C67E91C0E22B400641874 = {
@@ -526,13 +546,17 @@
 				2E3703BA1C0E26B1002E70A2 /* DefaultServiceLocator.swift in Sources */,
 				2E3703B51C0E25AC002E70A2 /* ServiceLocator.swift in Sources */,
 				2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */,
+				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
 				2E2C67F61C0E22B400641874 /* AppDelegate.swift in Sources */,
 				2E1D4AEA1C16686F00D474F0 /* HTTPRequest.swift in Sources */,
 				2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */,
+				2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */,
 				2E3703B31C0E2515002E70A2 /* Assembly.swift in Sources */,
+				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
 				2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */,
+				2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
