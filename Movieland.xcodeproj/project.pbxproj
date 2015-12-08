@@ -24,6 +24,8 @@
 		2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B071C1670DC00D474F0 /* Parseable.swift */; };
 		2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B091C1670E800D474F0 /* Model.swift */; };
 		2E1D4B0E1C16726300D474F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */; };
+		2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B131C167BAA00D474F0 /* MovieMediaService.swift */; };
+		2E1D4B181C167D5F00D474F0 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B171C167D5F00D474F0 /* Movie.swift */; };
 		2E2C67FD1C0E22B400641874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FC1C0E22B400641874 /* Assets.xcassets */; };
 		2E2C68001C0E22B400641874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E2C67FE1C0E22B400641874 /* LaunchScreen.storyboard */; };
 		2E2C68161C0E22B400641874 /* MovielandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2C68151C0E22B400641874 /* MovielandUITests.swift */; };
@@ -70,6 +72,8 @@
 		2E1D4B071C1670DC00D474F0 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
 		2E1D4B091C1670E800D474F0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E1D4B131C167BAA00D474F0 /* MovieMediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieMediaService.swift; sourceTree = "<group>"; };
+		2E1D4B171C167D5F00D474F0 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		2E2C67F21C0E22B400641874 /* Movieland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movieland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2C67FC1C0E22B400641874 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E2C67FF1C0E22B400641874 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -227,6 +231,39 @@
 			path = "App Delegate";
 			sourceTree = "<group>";
 		};
+		2E1D4B101C167B7D00D474F0 /* Media Service */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B111C167B7D00D474F0 /* Movies */,
+			);
+			path = "Media Service";
+			sourceTree = "<group>";
+		};
+		2E1D4B111C167B7D00D474F0 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B131C167BAA00D474F0 /* MovieMediaService.swift */,
+				2E1D4B151C167CA200D474F0 /* Domain */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		2E1D4B151C167CA200D474F0 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B161C167CAE00D474F0 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2E1D4B161C167CAE00D474F0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E1D4B171C167D5F00D474F0 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		2E2C67E91C0E22B400641874 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +321,7 @@
 				2E1D4B0C1C16726300D474F0 /* App Delegate */,
 				2E3703AF1C0E2504002E70A2 /* Core */,
 				2E1D4ADD1C16652C00D474F0 /* Common */,
+				2E1D4B101C167B7D00D474F0 /* Media Service */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -600,8 +638,10 @@
 			files = (
 				2E3703BA1C0E26B1002E70A2 /* DefaultServiceLocator.swift in Sources */,
 				2E3703B51C0E25AC002E70A2 /* ServiceLocator.swift in Sources */,
+				2E1D4B181C167D5F00D474F0 /* Movie.swift in Sources */,
 				2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */,
 				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
+				2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
 				2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */,
