@@ -14,6 +14,9 @@
 		2E155EF81C1DCC6E00F7DE18 /* MovieSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EF71C1DCC6E00F7DE18 /* MovieSearchResult.swift */; };
 		2E155EFB1C1DCEB700F7DE18 /* Formateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EFA1C1DCEB700F7DE18 /* Formateable.swift */; };
 		2E155EFF1C1DCFC200F7DE18 /* TMDBMovieSearchResultDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EFE1C1DCFC200F7DE18 /* TMDBMovieSearchResultDateFormatter.swift */; };
+		2E155F011C1DD1F800F7DE18 /* Assembly+Mappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155F001C1DD1F800F7DE18 /* Assembly+Mappers.swift */; };
+		2E155F031C1DD27900F7DE18 /* Assembly+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155F021C1DD27900F7DE18 /* Assembly+Foundation.swift */; };
+		2E155F051C1DD2BC00F7DE18 /* Assembly+Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155F041C1DD2BC00F7DE18 /* Assembly+Formatters.swift */; };
 		2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */; };
 		2E1D4AE41C1665D500D474F0 /* TestEnviromentDetectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */; };
 		2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE71C16686600D474F0 /* HTTPClient.swift */; };
@@ -81,6 +84,9 @@
 		2E155EF71C1DCC6E00F7DE18 /* MovieSearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieSearchResult.swift; sourceTree = "<group>"; };
 		2E155EFA1C1DCEB700F7DE18 /* Formateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formateable.swift; sourceTree = "<group>"; };
 		2E155EFE1C1DCFC200F7DE18 /* TMDBMovieSearchResultDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieSearchResultDateFormatter.swift; sourceTree = "<group>"; };
+		2E155F001C1DD1F800F7DE18 /* Assembly+Mappers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Mappers.swift"; sourceTree = "<group>"; };
+		2E155F021C1DD27900F7DE18 /* Assembly+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Foundation.swift"; sourceTree = "<group>"; };
+		2E155F041C1DD2BC00F7DE18 /* Assembly+Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Formatters.swift"; sourceTree = "<group>"; };
 		2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetector.swift; sourceTree = "<group>"; };
 		2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetectorSpec.swift; sourceTree = "<group>"; };
 		2E1D4AE71C16686600D474F0 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -491,6 +497,9 @@
 				2E3A7D221C16FF1B00F62D62 /* Assembly+MediaServices.swift */,
 				2E3A7D241C16FFF900F62D62 /* Assembly+Repositories.swift */,
 				2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */,
+				2E155F001C1DD1F800F7DE18 /* Assembly+Mappers.swift */,
+				2E155F041C1DD2BC00F7DE18 /* Assembly+Formatters.swift */,
+				2E155F021C1DD27900F7DE18 /* Assembly+Foundation.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -866,9 +875,11 @@
 				2E3A7D231C16FF1B00F62D62 /* Assembly+MediaServices.swift in Sources */,
 				2E3703BA1C0E26B1002E70A2 /* DefaultServiceLocator.swift in Sources */,
 				2E3703B51C0E25AC002E70A2 /* ServiceLocator.swift in Sources */,
+				2E155F031C1DD27900F7DE18 /* Assembly+Foundation.swift in Sources */,
 				2E1D4B181C167D5F00D474F0 /* Movie.swift in Sources */,
 				2E3A7D2D1C17062C00F62D62 /* Dictionary+Extended.swift in Sources */,
 				2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */,
+				2E155F011C1DD1F800F7DE18 /* Assembly+Mappers.swift in Sources */,
 				2E3A7D211C16FCE800F62D62 /* TMDBRequestProcessor.swift in Sources */,
 				2E155EFB1C1DCEB700F7DE18 /* Formateable.swift in Sources */,
 				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
@@ -877,6 +888,7 @@
 				2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */,
 				2E155EF31C1DCADD00F7DE18 /* Mappable.swift in Sources */,
 				2E155EF01C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift in Sources */,
+				2E155F051C1DD2BC00F7DE18 /* Assembly+Formatters.swift in Sources */,
 				2E1D4B261C16858F00D474F0 /* TMDBMovieMediaServiceApiDefinition.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
