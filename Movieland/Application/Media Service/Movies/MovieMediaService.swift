@@ -11,7 +11,7 @@ import Result
 
 /// Returns a list of movies if request succeed or empty array if there are not results.
 /// If request failed returns an domain error
-typealias MovieMediaServiceSearchResult = Result<[Movie], NSError> -> ()
+typealias MovieMediaServiceSearchResult = Result<[MovieSearchResult], NSError> -> ()
 
 /**
  *  The Movie Media Service it's a protocol for implementing different "movies service" like 
