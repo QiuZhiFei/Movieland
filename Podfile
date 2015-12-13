@@ -1,5 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
+# CocoaPods Keys
+
+plugin 'cocoapods-keys', {
+  :project => "Movieland",
+  :target => "Movieland",
+  :keys => [
+    "TheMovieDataBaseApiKey"
+  ]
+}
+
+# Pod configuration
+
 platform :ios, '8.0'
 
 use_frameworks!
