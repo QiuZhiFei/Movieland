@@ -6,6 +6,9 @@ cache:
   - cocoapods
   - bundler
 
+before_install:
+	bundle exec pod keys set TheMovieDataBaseApiKey "-" Movieland
+
 install:
   - bundle install --without=documentation
   - gem update fastlane

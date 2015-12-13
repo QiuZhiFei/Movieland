@@ -16,7 +16,7 @@ struct TMDBRequestProcessor: HTTPRequestProcessor {
     
     func processRequest(request: HTTPRequest) -> HTTPRequest {
         return request.parameters([
-            Parameters.apiKey: ""
+            Parameters.apiKey: Keys.theMovieDataBaseApiKey()
         ])
     }
 }

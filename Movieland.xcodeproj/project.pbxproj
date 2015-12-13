@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E155EEA1C1DBCB600F7DE18 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EE91C1DBCB600F7DE18 /* Keys.swift */; };
 		2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */; };
 		2E1D4AE41C1665D500D474F0 /* TestEnviromentDetectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */; };
 		2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE71C16686600D474F0 /* HTTPClient.swift */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E155EE91C1DBCB600F7DE18 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetector.swift; sourceTree = "<group>"; };
 		2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetectorSpec.swift; sourceTree = "<group>"; };
 		2E1D4AE71C16686600D474F0 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -146,6 +148,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E155EE81C1DBC9900F7DE18 /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				2E155EE91C1DBCB600F7DE18 /* Keys.swift */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
 		2E1D4ADD1C16652C00D474F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +414,7 @@
 				2E3703B01C0E2504002E70A2 /* Assembly */,
 				2E3703B11C0E2504002E70A2 /* Service Locator */,
 				2E1D4AE51C16682600D474F0 /* Network */,
+				2E155EE81C1DBC9900F7DE18 /* Keys */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -804,6 +815,7 @@
 				2E1D4AEE1C16688400D474F0 /* HTTPResponse.swift in Sources */,
 				2E3A7D271C17006D00F62D62 /* Assembly+Parsers.swift in Sources */,
 				2E3A7D1D1C16FB6600F62D62 /* Assembly+Network.swift in Sources */,
+				2E155EEA1C1DBCB600F7DE18 /* Keys.swift in Sources */,
 				2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */,
 				2E3703B31C0E2515002E70A2 /* Assembly.swift in Sources */,
 				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
