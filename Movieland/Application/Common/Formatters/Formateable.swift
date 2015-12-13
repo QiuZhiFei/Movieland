@@ -20,5 +20,5 @@ protocol Formateable {
      
      - returns: returns a formatted input
      */
-    func format<I, O>(input: I) -> O
+    func format<I, O>(input: I) -> O?
 }
