@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2E155EEA1C1DBCB600F7DE18 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EE91C1DBCB600F7DE18 /* Keys.swift */; };
+		2E155EF01C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E155EEF1C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift */; };
 		2E1D4AE01C16652C00D474F0 /* TestEnviromentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */; };
 		2E1D4AE41C1665D500D474F0 /* TestEnviromentDetectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */; };
 		2E1D4AE81C16686600D474F0 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AE71C16686600D474F0 /* HTTPClient.swift */; };
@@ -69,6 +70,7 @@
 
 /* Begin PBXFileReference section */
 		2E155EE91C1DBCB600F7DE18 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		2E155EEF1C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieSearchResultApiModel.swift; sourceTree = "<group>"; };
 		2E1D4ADF1C16652C00D474F0 /* TestEnviromentDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetector.swift; sourceTree = "<group>"; };
 		2E1D4AE31C1665D500D474F0 /* TestEnviromentDetectorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEnviromentDetectorSpec.swift; sourceTree = "<group>"; };
 		2E1D4AE71C16686600D474F0 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
@@ -154,6 +156,22 @@
 				2E155EE91C1DBCB600F7DE18 /* Keys.swift */,
 			);
 			path = Keys;
+			sourceTree = "<group>";
+		};
+		2E155EEB1C1DBF9300F7DE18 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2E155EEC1C1DBF9300F7DE18 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2E155EEC1C1DBF9300F7DE18 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2E155EEF1C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		2E1D4ADD1C16652C00D474F0 /* Common */ = {
@@ -341,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				2E1D4B251C16858F00D474F0 /* TMDBMovieMediaServiceApiDefinition.swift */,
+				2E155EEB1C1DBF9300F7DE18 /* Domain */,
 				2E3A7D161C16F8E200F62D62 /* Search */,
 			);
 			path = Api;
@@ -807,6 +826,7 @@
 				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
 				2E3A7D181C16F90200F62D62 /* TMDBMovieMediaServiceSearchApiDataSource.swift in Sources */,
 				2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */,
+				2E155EF01C1DC03F00F7DE18 /* TMDBMovieSearchResultApiModel.swift in Sources */,
 				2E1D4B261C16858F00D474F0 /* TMDBMovieMediaServiceApiDefinition.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
