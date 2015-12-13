@@ -53,7 +53,9 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
                 return self.mapper.mapObject(from: item)
             })
             
-            print(mappedMovieSearchResults)
+            searchResults(
+                Result.Success(mappedMovieSearchResults)
+            )
         }
     }
 }
