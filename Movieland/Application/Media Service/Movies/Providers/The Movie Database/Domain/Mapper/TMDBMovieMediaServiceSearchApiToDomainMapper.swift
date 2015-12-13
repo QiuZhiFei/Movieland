@@ -10,9 +10,21 @@ import Foundation
 
 struct TMDBMovieMediaServiceSearchApiToDomainMapper: Mappable {
     
+    let dateFormatter: Formateable
+    
+    init(dateFormatter: Formateable) {
+        self.dateFormatter = dateFormatter
+    }
+    
     func mapObject<F, T>(from objectToMap: F) -> T {
         
         let from = objectToMap as! TMDBMovieSearchResultApiModel
+        
+        var releaseDate: NSDate?
+        
+        if let formattedReleaseDate: NSDate = dateFormatter.format(from.releaseDate) {
+            releaseDate = formattedReleaseDate
+        }
         
         return MovieSearchResult(
             id: from.id,
@@ -22,7 +34,7 @@ struct TMDBMovieMediaServiceSearchApiToDomainMapper: Mappable {
             popularity: from.popularity,
             posterPath: from.posterPath,
             backdropPath: from.backdropPath,
-            releaseDate: NSDate(),
+            releaseDate: releaseDate,
             voteAverage: from.voteAverage,
             voteCount: from.voteCount,
             genreIds: from.genreIds,
