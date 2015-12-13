@@ -17,7 +17,7 @@ struct MovieSearchResult {
     let popularity: Double
     let posterPath: String
     let backdropPath: String
-    let releaseDate: NSDate
+    let releaseDate: NSDate?
     let voteAverage: Double
     let voteCount: Int
     let genreIds: [Int]
