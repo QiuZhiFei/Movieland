@@ -16,12 +16,12 @@ struct TMDBMovieSearchResultDateFormatter: Formateable {
         self.dateFormatter = dateFormatter
     }
     
-    func format<I, O>(input: I) -> O {
+    func format<I, O>(input: I) -> O? {
         
-        let date = input as! String
+        let dateString = input as! String
  
-        dateFormatter.dateFormat = "YYYY-mm-HH"
+        dateFormatter.dateFormat = "yyyy-mm-dd"
         
-        return dateFormatter.dateFromString(date) as! O
+        return dateFormatter.dateFromString(dateString) as? O
     }
 }
