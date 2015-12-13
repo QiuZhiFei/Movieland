@@ -21,10 +21,15 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
     
     let httpClient: HTTPClient
     let parser: Parseable
+    let mapper: Mappable
     
-    init(httpClient: HTTPClient, parser: Parseable) {
+    init(httpClient: HTTPClient,
+        parser: Parseable,
+        mapper: Mappable)
+    {
         self.httpClient = httpClient
         self.parser = parser
+        self.mapper = mapper
     }
     
     func search(query: String, searchResults: MovieMediaServiceSearchResult) {
@@ -44,8 +49,11 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
             }
             
             let movieSearchResults: [TMDBMovieSearchResultApiModel] = self.parser.parseArray(response.json)
+            let mappedMovieSearchResults: [MovieSearchResult] = movieSearchResults.map({ (item) -> MovieSearchResult in
+                return self.mapper.mapObject(from: item)
+            })
             
-            print(movieSearchResults)
+            print(mappedMovieSearchResults)
         }
     }
 }

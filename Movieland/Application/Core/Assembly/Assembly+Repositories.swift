@@ -24,7 +24,8 @@ extension Assembly: TMDBMovieMediaServiceSearchApiDataSourceProvider {
     func dataSource() -> TMDBMovieMediaServiceSearchApiDataSource {
         return TMDBMovieMediaServiceSearchApiDataSource(
             httpClient: getTMDBHttpClient(),
-            parser: getTMDBMovieMediaServiceSearchApiParser()
+            parser: getTMDBMovieMediaServiceSearchApiParser(),
+            mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper()
         )
     }
 }
