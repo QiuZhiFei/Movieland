@@ -10,13 +10,13 @@ APP_TEST_SCHEME = "MovielandTests"
 platform :ios do
   before_all do
   end
- 
+
   desc "Runs all the tests"
   lane :test do
-    xctest(
-      destination: "name=iPhone 5s,OS=8.1",
+    scan(
+      workspace: APP_WORKSPACE,
       scheme: APP_TEST_SCHEME,
-      destination_timeout: 120
+      destination: "name=iPhone 5s,OS=9.1"
     )
   end
 
