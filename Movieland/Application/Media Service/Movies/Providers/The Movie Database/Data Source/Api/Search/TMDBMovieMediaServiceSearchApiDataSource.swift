@@ -42,8 +42,10 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
                 )
                 return
             }
-
-            print(response)
+            
+            let movieSearchResults: [TMDBMovieSearchResultApiModel] = self.parser.parseArray(response.json)
+            
+            print(movieSearchResults)
         }
     }
 }

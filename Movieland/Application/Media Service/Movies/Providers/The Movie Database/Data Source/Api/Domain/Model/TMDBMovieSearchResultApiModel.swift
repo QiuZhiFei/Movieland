@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TMDBMovieSearchResultApiModel {
+struct TMDBMovieSearchResultApiModel: Model {
     
     let id: String
     let title: String
