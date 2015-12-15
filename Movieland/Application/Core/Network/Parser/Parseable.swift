@@ -21,13 +21,4 @@ protocol Parseable {
      - returns: a new parsed Model object
      */
     func parse<T where T: Model>(element: [String: AnyObject]) -> T
-    
-    /**
-     Parse a list of elements
-     
-     - parameter elements: list of dictionaries to parse
-     
-     - returns: a new list of parsed Model objects
-     */
-    func parseArray<T where T: Model>(elements: [String: AnyObject]) -> [T]
 }
