@@ -64,13 +64,4 @@ struct TMDBMovieMediaServiceSearchApiParser: Parseable {
             video: video
         ) as! T
     }
-
-    func parseArray<T where T : Model>(elements: [String : AnyObject]) -> [T] {
-        
-        let json = JSON(elements)
-        
-        return json[JSONKeys.results].arrayValue.map { (item) in
-            return parse(item.dictionaryObject!)
-        }
-    }
 }
