@@ -12,7 +12,8 @@ extension Assembly {
     
     func getTMDBMediaServiceRepository() -> MovieMediaService {
         return TMDBMovieMediaServiceRepository(
-            searchDataSourceProvider: self
+            searchDataSourceProvider: self,
+            getMovieByIdDataSourceProvider: self
         )
     }
 }
@@ -26,6 +27,19 @@ extension Assembly: TMDBMovieMediaServiceSearchApiDataSourceProvider {
             httpClient: getTMDBHttpClient(),
             parser: getTMDBMovieMediaServiceSearchApiParser(),
             mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper()
+        )
+    }
+}
+
+// MARK: - TMDBMovieMediaServiceGetMovieByIdApiDataSourceProvider
+
+extension Assembly: TMDBMovieMediaServiceGetMovieByIdApiDataSourceProvider {
+    
+    func dataSource() -> TMDBMovieMediaServiceGetMovieByIdApiDataSource {
+        return TMDBMovieMediaServiceGetMovieByIdApiDataSource(
+            httpClient: getTMDBHttpClient(),
+            parser: getTMDBMovieMediaServiceMovieApiParser(),
+            mapper: getTMDBMovieMediaServiceMovieApiToDomainMapper()
         )
     }
 }

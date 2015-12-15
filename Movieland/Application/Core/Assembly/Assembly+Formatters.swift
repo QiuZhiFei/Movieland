@@ -10,8 +10,8 @@ import Foundation
 
 extension Assembly {
     
-    func getTMDBMovieSearchResultDateFormatter() -> Formateable {
-        return TMDBMovieSearchResultDateFormatter(
+    func getTMDBDateFormatter() -> Formateable {
+        return TMDBDateFormatter(
             dateFormatter: getDateFormatter()
         )
     }

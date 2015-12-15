@@ -12,7 +12,33 @@ extension Assembly {
     
     func getTMDBMovieMediaServiceSearchApiToDomainMapper() -> Mappable {
         return TMDBMovieMediaServiceSearchApiToDomainMapper(
-            dateFormatter: getTMDBMovieSearchResultDateFormatter()
+            dateFormatter: getTMDBDateFormatter()
         )
+    }
+    
+    func getTMDBMovieMediaServiceMovieApiToDomainMapper() -> Mappable {
+        return TMDBMovieMediaServiceMovieApiToDomainMapper(
+            dateFormatter: getTMDBDateFormatter(),
+            genreMapper: getTMDBMovieMediaServiceMovieGenreApiToDomainMapper(),
+            productionCompanyMapper: getTMDBMovieMediaServiceMovieProductionCompanyApiToDomainMapper(),
+            productionCountryMapper: getTMDBMovieMediaServiceMovieProductionCountryApiToDomainMapper(),
+            spokenLanguageMapper: getTMDBMovieMediaServiceMovieSpokenLanguageApiToDomainMapper()
+        )
+    }
+    
+    func getTMDBMovieMediaServiceMovieGenreApiToDomainMapper() -> Mappable {
+        return TMDBMovieMediaServiceMovieGenreApiToDomainMapper()
+    }
+    
+    func getTMDBMovieMediaServiceMovieProductionCompanyApiToDomainMapper() -> Mappable {
+        return TMDBMovieMediaServiceMovieProductionCompanyApiToDomainMapper()
+    }
+    
+    func getTMDBMovieMediaServiceMovieProductionCountryApiToDomainMapper() -> Mappable {
+        return TMDBMovieMediaServiceMovieProductionCountryApiToDomainMapper()
+    }
+    
+    func getTMDBMovieMediaServiceMovieSpokenLanguageApiToDomainMapper() -> Mappable {
+        return TMDBMovieMediaServiceMovieSpokenLanguageApiToDomainMapper()
     }
 }
