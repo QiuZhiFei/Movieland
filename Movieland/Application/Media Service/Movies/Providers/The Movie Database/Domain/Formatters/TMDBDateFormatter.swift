@@ -1,5 +1,5 @@
 //
-//  TMDBMovieSearchResultDateFormatter.swift
+//  TMDBDateFormatter.swift
 //  Movieland
 //
 //  Created by Oscar Duran on 13/12/15.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TMDBMovieSearchResultDateFormatter: Formateable {
+struct TMDBDateFormatter: Formateable {
     
     let dateFormatter: NSDateFormatter
     
