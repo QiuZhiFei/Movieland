@@ -9,8 +9,7 @@
 import Foundation
 import Result
 
-/// Returns a list of movies if request succeed or empty array if there are not results.
-/// If request failed returns an domain error
+typealias MovieMediaServiceMovieByIdResult = Result<Movie, NSError> -> ()
 typealias MovieMediaServiceSearchResult = Result<[MovieSearchResult], NSError> -> ()
 
 /**
@@ -26,4 +25,12 @@ protocol MovieMediaService {
      - parameter searchResults: MovieMediaServiceSearchResult
      */
     func search(query: String, searchResults: MovieMediaServiceSearchResult)
+    
+    /**
+     Get the basic movie information for a specific movie id
+     
+     - parameter movieId:     movie identifier
+     - parameter movieResult: MovieMediaServiceMovieByIdResult
+     */
+    func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult)
 }
