@@ -11,6 +11,20 @@ import Result
 
 typealias MovieMediaServiceMovieByIdResult = Result<Movie, NSError> -> ()
 typealias MovieMediaServiceSearchResult = Result<[MovieSearchResult], NSError> -> ()
+typealias MovieMediaServiceMovieListResult = Result<[Movie], NSError> -> ()
+
+/**
+ - NowPlaying: Get the list of movies playing that have been, or are being released this week
+ - Popular:    Get the list of popular movies
+ - TopRated:   Get the list of top rated movies
+ - Upcoming:   Get the list of upcoming movies by release date
+ */
+enum MovieMediaServiceMode {
+    case NowPlaying
+    case Popular
+    case TopRated
+    case Upcoming
+}
 
 /**
  *  The Movie Media Service it's a protocol for implementing different "movies service" like 
@@ -33,4 +47,13 @@ protocol MovieMediaService {
      - parameter movieResult: MovieMediaServiceMovieByIdResult
      */
     func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult)
+    
+    /**
+     Get the list of movies by mode (popular, top rated, etc)
+     
+     - parameter mode:            MovieMediaServiceMode
+     - parameter movieListResult: MovieMediaServiceMovieListResult
+     */
+    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult)
+    
 }
