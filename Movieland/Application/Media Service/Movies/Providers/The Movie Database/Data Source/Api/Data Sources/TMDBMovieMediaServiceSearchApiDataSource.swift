@@ -49,9 +49,9 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
             }
             
             let movieSearchResults: [TMDBMovieSearchResultApiModel] = self.parser.parse(response.json, key: "results")
-            let mappedMovieSearchResults: [MovieSearchResult] = movieSearchResults.map({ (item) -> MovieSearchResult in
-                return self.mapper.mapObject(from: item)
-            })
+            let mappedMovieSearchResults: [MovieSearchResult] = movieSearchResults.map {
+                return self.mapper.mapObject(from: $0)
+            }
             
             searchResults(
                 Result.Success(mappedMovieSearchResults)
