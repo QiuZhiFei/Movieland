@@ -78,6 +78,7 @@
 		2EEDBD791C21A5C500CE3F30 /* DictionaryExtendedSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDBD631C21A57600CE3F30 /* DictionaryExtendedSpec.swift */; };
 		2EEDBD7A1C21A5CA00CE3F30 /* TestEnviromentDetectorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDBD651C21A57600CE3F30 /* TestEnviromentDetectorSpec.swift */; };
 		2EEDBD7E1C21A6AA00CE3F30 /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDBD7D1C21A6AA00CE3F30 /* JSONLoader.swift */; };
+		2EEDBD8A1C21A83800CE3F30 /* TMDBRequestProcessorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDBD891C21A83800CE3F30 /* TMDBRequestProcessorSpec.swift */; };
 		E68C12761B7E6D5F0AA3227D /* Pods_MovielandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */; };
 		EEAED3B0DBE62FF1DDFF81A2 /* Pods_Movieland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52FF7DF0B26CB244E430CA83 /* Pods_Movieland.framework */; };
 /* End PBXBuildFile section */
@@ -177,6 +178,7 @@
 		2EEDBD6C1C21A57600CE3F30 /* AlamofireHTTPRequestSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestSpec.swift; sourceTree = "<group>"; };
 		2EEDBD6E1C21A57600CE3F30 /* DefaultServiceLocatorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultServiceLocatorSpec.swift; sourceTree = "<group>"; };
 		2EEDBD7D1C21A6AA00CE3F30 /* JSONLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
+		2EEDBD891C21A83800CE3F30 /* TMDBRequestProcessorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBRequestProcessorSpec.swift; sourceTree = "<group>"; };
 		3E7FC5C1F9A1DEE298FEBB59 /* Pods_MovielandTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovielandTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FF7DF0B26CB244E430CA83 /* Pods_Movieland.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Movieland.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		603262157CAE4E4D07A89788 /* Pods-MovielandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovielandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovielandTests/Pods-MovielandTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -610,6 +612,7 @@
 			children = (
 				2EEDBD661C21A57600CE3F30 /* Core */,
 				2EEDBD601C21A57600CE3F30 /* Common */,
+				2EEDBD7F1C21A7F200CE3F30 /* Media Service */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -704,6 +707,86 @@
 				2EEDBD7D1C21A6AA00CE3F30 /* JSONLoader.swift */,
 			);
 			path = "JSON Loader";
+			sourceTree = "<group>";
+		};
+		2EEDBD7F1C21A7F200CE3F30 /* Media Service */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD801C21A7F200CE3F30 /* Movies */,
+			);
+			path = "Media Service";
+			sourceTree = "<group>";
+		};
+		2EEDBD801C21A7F200CE3F30 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD811C21A7F200CE3F30 /* Providers */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		2EEDBD811C21A7F200CE3F30 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD821C21A7F200CE3F30 /* The Movie Data Base */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		2EEDBD821C21A7F200CE3F30 /* The Movie Data Base */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD831C21A7F200CE3F30 /* Domain */,
+			);
+			path = "The Movie Data Base";
+			sourceTree = "<group>";
+		};
+		2EEDBD831C21A7F200CE3F30 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD861C21A7F200CE3F30 /* Network */,
+				2EEDBD881C21A7F200CE3F30 /* Parser */,
+				2EEDBD851C21A7F200CE3F30 /* Mapper */,
+				2EEDBD841C21A7F200CE3F30 /* Formatters */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2EEDBD841C21A7F200CE3F30 /* Formatters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Formatters;
+			sourceTree = "<group>";
+		};
+		2EEDBD851C21A7F200CE3F30 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		2EEDBD861C21A7F200CE3F30 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD871C21A7F200CE3F30 /* Request Processor */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2EEDBD871C21A7F200CE3F30 /* Request Processor */ = {
+			isa = PBXGroup;
+			children = (
+				2EEDBD891C21A83800CE3F30 /* TMDBRequestProcessorSpec.swift */,
+			);
+			path = "Request Processor";
+			sourceTree = "<group>";
+		};
+		2EEDBD881C21A7F200CE3F30 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 		716E894F312230A62BB6577A /* Frameworks */ = {
@@ -1024,6 +1107,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEDBD8A1C21A83800CE3F30 /* TMDBRequestProcessorSpec.swift in Sources */,
 				2EEDBD771C21A5B900CE3F30 /* AlamofireHTTPRequestSpec.swift in Sources */,
 				2EEDBD751C21A5B200CE3F30 /* AlamofireHTTPClientSpec.swift in Sources */,
 				2EEDBD791C21A5C500CE3F30 /* DictionaryExtendedSpec.swift in Sources */,
