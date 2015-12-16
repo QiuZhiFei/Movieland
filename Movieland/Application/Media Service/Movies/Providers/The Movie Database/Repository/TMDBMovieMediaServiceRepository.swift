@@ -12,12 +12,15 @@ struct TMDBMovieMediaServiceRepository: MovieMediaService {
     
     let searchDataSourceProvider: TMDBMovieMediaServiceSearchApiDataSourceProvider
     let getMovieByIdDataSourceProvider: TMDBMovieMediaServiceGetMovieByIdApiDataSourceProvider
+    let getMoviesByModeDataSourceProvider: TMDBMovieMediaServiceGetMoviesByModeApiDataSourceProvider
     
     init(searchDataSourceProvider: TMDBMovieMediaServiceSearchApiDataSourceProvider,
-        getMovieByIdDataSourceProvider: TMDBMovieMediaServiceGetMovieByIdApiDataSourceProvider)
+        getMovieByIdDataSourceProvider: TMDBMovieMediaServiceGetMovieByIdApiDataSourceProvider,
+        let getMoviesByModeDataSourceProvider: TMDBMovieMediaServiceGetMoviesByModeApiDataSourceProvider)
     {
         self.searchDataSourceProvider = searchDataSourceProvider
         self.getMovieByIdDataSourceProvider = getMovieByIdDataSourceProvider
+        self.getMoviesByModeDataSourceProvider = getMoviesByModeDataSourceProvider
     }
     
     func search(query: String, searchResults: MovieMediaServiceSearchResult) {
@@ -26,5 +29,9 @@ struct TMDBMovieMediaServiceRepository: MovieMediaService {
     
     func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult) {
         getMovieByIdDataSourceProvider.dataSource().getMovieById(movieId, movieResult: movieResult)
+    }
+    
+    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult) {
+        getMoviesByModeDataSourceProvider.dataSource().getMovies(mode, movieListResult: movieListResult)
     }
 }

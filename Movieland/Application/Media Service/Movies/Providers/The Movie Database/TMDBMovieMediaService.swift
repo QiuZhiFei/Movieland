@@ -23,4 +23,8 @@ struct TMDBMovieMediaService: MovieMediaService {
     func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult) {
         repository.getMovieById(movieId, movieResult: movieResult)
     }
+    
+    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult) {
+        repository.getMovies(mode, movieListResult: movieListResult)
+    }
 }
