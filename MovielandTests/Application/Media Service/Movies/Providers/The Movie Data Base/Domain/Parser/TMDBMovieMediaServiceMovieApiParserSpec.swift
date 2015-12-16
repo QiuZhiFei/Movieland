@@ -17,10 +17,10 @@ class TMDBMovieMediaServiceMovieApiParserSpec: QuickSpec {
         
         describe("TMDBMovieMediaServiceMovieApiParser") {
             
-            let genreParser = Assembly.defaultAssembly.getTMDBMovieMediaServiceGenreApiParser()
-            let productionCompanyParser = Assembly.defaultAssembly.getTMDBMovieMediaServiceProductionCompanyApiParser()
-            let productionCountryParser = Assembly.defaultAssembly.getTMDBMovieMediaServiceProductionCountryApiParser()
-            let spokenLanguageParser = Assembly.defaultAssembly.getTMDBMovieMediaServiceSpokenLanguageParser()
+            let genreParser = Module().getTMDBMovieMediaServiceGenreApiParser()
+            let productionCompanyParser = Module().getTMDBMovieMediaServiceProductionCompanyApiParser()
+            let productionCountryParser = Module().getTMDBMovieMediaServiceProductionCountryApiParser()
+            let spokenLanguageParser = Module().getTMDBMovieMediaServiceSpokenLanguageParser()
             
             let sut = TMDBMovieMediaServiceMovieApiParser(
                 genreParser: genreParser,

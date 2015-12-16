@@ -12,10 +12,19 @@ import Foundation
  *  Application assembly containing all the application dependencies
  */
 struct Assembly {
-    static let defaultAssembly = Assembly()
+    private static let defaultAssembly = Assembly()
     
     /**
      Prevent initializing from outside
      */
     private init() {}
+}
+
+/**
+ Fetch module from assembly
+ 
+ - returns: the default assembly
+ */
+func Module() -> Assembly {
+    return Assembly.defaultAssembly
 }
