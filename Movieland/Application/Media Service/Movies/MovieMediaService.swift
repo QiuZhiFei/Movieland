@@ -11,7 +11,7 @@ import Result
 
 typealias MovieMediaServiceMovieByIdResult = Result<Movie, NSError> -> ()
 typealias MovieMediaServiceSearchResult = Result<[MovieSearchResult], NSError> -> ()
-typealias MovieMediaServiceMovieListResult = Result<[Movie], NSError> -> ()
+typealias MovieMediaServiceMovieListResult = Result<[MovieSearchResult], NSError> -> ()
 
 /**
  - NowPlaying: Get the list of movies playing that have been, or are being released this week
