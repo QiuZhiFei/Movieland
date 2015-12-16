@@ -17,7 +17,7 @@ class TMDBMovieMediaServiceSpokenLanguageApiParserSpec: QuickSpec {
         
         describe("TMDBMovieMediaServiceSpokenLanguageApiParser") {
             
-            let sut = TMDBMovieMediaServiceSpokenLanguageApiParser()
+            let sut = Module().getTMDBMovieMediaServiceSpokenLanguageApiParser()
             
             it("should parse a single item") {
                 

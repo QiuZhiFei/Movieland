@@ -17,17 +17,7 @@ class TMDBMovieMediaServiceMovieApiParserSpec: QuickSpec {
         
         describe("TMDBMovieMediaServiceMovieApiParser") {
             
-            let genreParser = Module().getTMDBMovieMediaServiceGenreApiParser()
-            let productionCompanyParser = Module().getTMDBMovieMediaServiceProductionCompanyApiParser()
-            let productionCountryParser = Module().getTMDBMovieMediaServiceProductionCountryApiParser()
-            let spokenLanguageParser = Module().getTMDBMovieMediaServiceSpokenLanguageParser()
-            
-            let sut = TMDBMovieMediaServiceMovieApiParser(
-                genreParser: genreParser,
-                productionCompanyParser: productionCompanyParser,
-                productionCountryParser: productionCountryParser,
-                spokenLanguageParser: spokenLanguageParser
-            )
+            let sut = Module().getTMDBMovieMediaServiceMovieApiParser()
             
             it("should parse a single item") {
                 

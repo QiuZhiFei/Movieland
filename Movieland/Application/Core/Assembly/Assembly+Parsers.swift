@@ -19,7 +19,7 @@ extension Assembly {
             genreParser: getTMDBMovieMediaServiceGenreApiParser(),
             productionCompanyParser: getTMDBMovieMediaServiceProductionCompanyApiParser(),
             productionCountryParser: getTMDBMovieMediaServiceProductionCountryApiParser(),
-            spokenLanguageParser: getTMDBMovieMediaServiceSpokenLanguageParser()
+            spokenLanguageParser: getTMDBMovieMediaServiceSpokenLanguageApiParser()
         )
     }
     
@@ -35,7 +35,7 @@ extension Assembly {
         return TMDBMovieMediaServiceProductionCountryApiParser()
     }
     
-    func getTMDBMovieMediaServiceSpokenLanguageParser() -> Parseable {
+    func getTMDBMovieMediaServiceSpokenLanguageApiParser() -> Parseable {
         return TMDBMovieMediaServiceSpokenLanguageApiParser()
     }
 }

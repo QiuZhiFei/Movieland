@@ -17,7 +17,7 @@ class TMDBMovieMediaServiceGenreApiParserSpec: QuickSpec {
         
         describe("TMDBMovieMediaServiceGenreApiParser") {
             
-            let sut = TMDBMovieMediaServiceGenreApiParser()
+            let sut = Module().getTMDBMovieMediaServiceGenreApiParser()
             
             it("should parse a single item") {
                 
