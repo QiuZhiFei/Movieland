@@ -12,6 +12,7 @@ enum TMDBMovieMediaServiceApiDefinition {
     case ApiBaseUrl
     case Search
     case GetMovieById(movieId: String)
+    case GetMoviesByMode(mode: String)
 }
 
 extension TMDBMovieMediaServiceApiDefinition {
@@ -24,6 +25,8 @@ extension TMDBMovieMediaServiceApiDefinition {
             return "search/movie"
         case .GetMovieById(let movieId):
             return "movie/\(movieId)"
+        case .GetMoviesByMode(let mode):
+            return "movie\(mode)"
         }
     }
 }
