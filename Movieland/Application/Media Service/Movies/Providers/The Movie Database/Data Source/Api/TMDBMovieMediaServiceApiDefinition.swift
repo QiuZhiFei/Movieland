@@ -26,7 +26,7 @@ extension TMDBMovieMediaServiceApiDefinition {
         case .GetMovieById(let movieId):
             return "movie/\(movieId)"
         case .GetMoviesByMode(let mode):
-            return "movie\(mode)"
+            return "movie/\(mode)"
         }
     }
 }
