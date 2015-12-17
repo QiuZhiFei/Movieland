@@ -29,4 +29,13 @@ extension Assembly {
         
         return movieGenre
     }
+    
+    func getTMDBMovieProductionCompanyApiModel() -> TMDBMovieProductionCompanyApiModel {
+        
+        let parser = getTMDBMovieMediaServiceProductionCompanyApiParser()
+        let json: [String: AnyObject] = JSONLoader.fixture("single_production_company")
+        let productionCompany: TMDBMovieProductionCompanyApiModel = parser.parse(json)
+        
+        return productionCompany
+    }
 }
