@@ -56,4 +56,13 @@ extension Assembly {
         
         return spokenLanguage
     }
+    
+    func getTMDBMovieApiModel() -> TMDBMovieApiModel {
+        
+        let parser = getTMDBMovieMediaServiceMovieApiParser()
+        let json: [String: AnyObject] = JSONLoader.fixture("single_movie")
+        let movie: TMDBMovieApiModel = parser.parse(json)
+        
+        return movie
+    }
 }
