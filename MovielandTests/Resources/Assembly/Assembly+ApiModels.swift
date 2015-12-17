@@ -12,12 +12,21 @@ import Foundation
 
 extension Assembly {
     
-    func getTMDBMovieSearchResultApiModelModel() -> TMDBMovieSearchResultApiModel {
+    func getTMDBMovieSearchResultApiModel() -> TMDBMovieSearchResultApiModel {
         
         let parser = getTMDBMovieMediaServiceSearchApiParser()
         let json: [String: AnyObject] = JSONLoader.fixture("single_movie_search_result")
         let movieSearchResult: TMDBMovieSearchResultApiModel = parser.parse(json)
         
         return movieSearchResult
+    }
+    
+    func getTMDBMovieServiceMovieGenreApiModel() -> TMDBMovieGenreApiModel {
+        
+        let parser = getTMDBMovieMediaServiceGenreApiParser()
+        let json: [String: AnyObject] = JSONLoader.fixture("single_genre")
+        let movieGenre: TMDBMovieGenreApiModel = parser.parse(json)
+        
+        return movieGenre
     }
 }

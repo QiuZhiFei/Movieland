@@ -21,7 +21,7 @@ class TMDBMovieMediaServiceSearchApiToDomainMapperSpec: QuickSpec {
             
             it("should map the search result api model into the domain model") {
                 
-                let apiModel = Module().getTMDBMovieSearchResultApiModelModel()
+                let apiModel = Module().getTMDBMovieSearchResultApiModel()
                 let domainModel: MovieSearchResult = sut.mapObject(from: apiModel)
                 
                 expect(domainModel.id).to(equal(apiModel.id))
