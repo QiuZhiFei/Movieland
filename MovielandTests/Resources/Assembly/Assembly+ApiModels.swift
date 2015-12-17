@@ -38,4 +38,13 @@ extension Assembly {
         
         return productionCompany
     }
+    
+    func getTMDBMovieProductionCountryApiModel() -> TMDBMovieProductionCountryApiModel {
+        
+        let parser = getTMDBMovieMediaServiceProductionCountryApiParser()
+        let json: [String: AnyObject] = JSONLoader.fixture("single_production_country")
+        let productionCountry: TMDBMovieProductionCountryApiModel = parser.parse(json)
+        
+        return productionCountry
+    }
 }
