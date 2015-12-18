@@ -22,22 +22,30 @@ struct TMDBMovieMediaServiceSearchApiDataSource {
     let httpClient: HTTPClient
     let parser: Parseable
     let mapper: Mappable
+    let queryComposer: RequestQueryComposer
     
     init(httpClient: HTTPClient,
         parser: Parseable,
-        mapper: Mappable)
+        mapper: Mappable,
+        queryComposer: RequestQueryComposer)
     {
         self.httpClient = httpClient
         self.parser = parser
         self.mapper = mapper
+        self.queryComposer = queryComposer
     }
     
-    func search(query: String, searchResults: MovieMediaServiceSearchResult) {
+    func search(query: String, parameters: QueryParameters?, searchResults: MovieMediaServiceSearchResult) {
         
         let path = TMDBMovieMediaServiceApiDefinition.Search.path
-        let request = httpClient.GET(path).parameters([
+        var request = httpClient.GET(path).parameters([
             Parameters.query : query
         ])
+        
+        request = queryComposer.compose(
+            request,
+            parameters: parameters
+        )
         
         httpClient.execute(request) { (requestResult) in
             

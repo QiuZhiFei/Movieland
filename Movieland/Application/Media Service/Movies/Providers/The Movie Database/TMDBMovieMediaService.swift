@@ -16,15 +16,15 @@ struct TMDBMovieMediaService: MovieMediaService {
         self.repository = repository
     }
     
-    func search(query: String, searchResults: MovieMediaServiceSearchResult) {
-        repository.search(query, searchResults: searchResults)
+    func search(query: String, parameters: QueryParameters?, searchResults: MovieMediaServiceSearchResult) {
+        repository.search(query, parameters: parameters, searchResults: searchResults)
     }
     
     func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult) {
         repository.getMovieById(movieId, movieResult: movieResult)
     }
     
-    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult) {
-        repository.getMovies(mode, movieListResult: movieListResult)
+    func getMovies(mode: MovieMediaServiceMode, parameters: QueryParameters?, movieListResult: MovieMediaServiceMovieListResult) {
+        repository.getMovies(mode, parameters: parameters, movieListResult: movieListResult)
     }
 }

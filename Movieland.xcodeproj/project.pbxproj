@@ -59,6 +59,12 @@
 		2E3A7D271C17006D00F62D62 /* Assembly+Parsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */; };
 		2E3A7D291C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D281C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift */; };
 		2E3A7D2D1C17062C00F62D62 /* Dictionary+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3A7D2C1C17062C00F62D62 /* Dictionary+Extended.swift */; };
+		2E4CFF7A1C2452D0001DE991 /* QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF791C2452D0001DE991 /* QueryParameters.swift */; };
+		2E4CFF7D1C2454C0001DE991 /* Paginable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF7C1C2454C0001DE991 /* Paginable.swift */; };
+		2E4CFF7F1C2456E8001DE991 /* PaginableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF7E1C2456E8001DE991 /* PaginableRequest.swift */; };
+		2E4CFF811C2458E7001DE991 /* DefaultPaginableRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF801C2458E7001DE991 /* DefaultPaginableRequest.swift */; };
+		2E4CFF881C245E0B001DE991 /* TMDBRequestQueryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF871C245E0B001DE991 /* TMDBRequestQueryComposer.swift */; };
+		2E4CFF8B1C245F38001DE991 /* RequestQueryComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4CFF8A1C245F38001DE991 /* RequestQueryComposer.swift */; };
 		2E8E220E1C2036BE0027363D /* TMDBMovieMediaServiceMovieApiToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E220D1C2036BE0027363D /* TMDBMovieMediaServiceMovieApiToDomainMapper.swift */; };
 		2E8E22101C2038FC0027363D /* MovieGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E220F1C2038FC0027363D /* MovieGenre.swift */; };
 		2E8E22121C20391F0027363D /* TMDBMovieMediaServiceMovieGenreApiToDomainMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E22111C20391F0027363D /* TMDBMovieMediaServiceMovieGenreApiToDomainMapper.swift */; };
@@ -179,6 +185,12 @@
 		2E3A7D261C17006D00F62D62 /* Assembly+Parsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Assembly+Parsers.swift"; sourceTree = "<group>"; };
 		2E3A7D281C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieMediaServiceSearchApiParser.swift; sourceTree = "<group>"; };
 		2E3A7D2C1C17062C00F62D62 /* Dictionary+Extended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extended.swift"; sourceTree = "<group>"; };
+		2E4CFF791C2452D0001DE991 /* QueryParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryParameters.swift; sourceTree = "<group>"; };
+		2E4CFF7C1C2454C0001DE991 /* Paginable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paginable.swift; sourceTree = "<group>"; };
+		2E4CFF7E1C2456E8001DE991 /* PaginableRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginableRequest.swift; sourceTree = "<group>"; };
+		2E4CFF801C2458E7001DE991 /* DefaultPaginableRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPaginableRequest.swift; sourceTree = "<group>"; };
+		2E4CFF871C245E0B001DE991 /* TMDBRequestQueryComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBRequestQueryComposer.swift; sourceTree = "<group>"; };
+		2E4CFF8A1C245F38001DE991 /* RequestQueryComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestQueryComposer.swift; sourceTree = "<group>"; };
 		2E8E220D1C2036BE0027363D /* TMDBMovieMediaServiceMovieApiToDomainMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieMediaServiceMovieApiToDomainMapper.swift; sourceTree = "<group>"; };
 		2E8E220F1C2038FC0027363D /* MovieGenre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieGenre.swift; sourceTree = "<group>"; };
 		2E8E22111C20391F0027363D /* TMDBMovieMediaServiceMovieGenreApiToDomainMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TMDBMovieMediaServiceMovieGenreApiToDomainMapper.swift; sourceTree = "<group>"; };
@@ -343,6 +355,7 @@
 			children = (
 				2E1D4AE61C16682600D474F0 /* Network Client */,
 				2E1D4B061C1670CF00D474F0 /* Parser */,
+				2E4CFF7B1C2454B4001DE991 /* Paginable */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -411,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				2E1D4B161C167CAE00D474F0 /* Model */,
+				2E4CFF891C245F27001DE991 /* Request Query Composer */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -418,6 +432,7 @@
 		2E1D4B161C167CAE00D474F0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2E4CFF791C2452D0001DE991 /* QueryParameters.swift */,
 				2E1D4B171C167D5F00D474F0 /* Movie.swift */,
 				2E8E220F1C2038FC0027363D /* MovieGenre.swift */,
 				2E8E22131C2039B00027363D /* MovieProductionCompany.swift */,
@@ -638,9 +653,36 @@
 			path = Dictionary;
 			sourceTree = "<group>";
 		};
+		2E4CFF7B1C2454B4001DE991 /* Paginable */ = {
+			isa = PBXGroup;
+			children = (
+				2E4CFF7C1C2454C0001DE991 /* Paginable.swift */,
+				2E4CFF7E1C2456E8001DE991 /* PaginableRequest.swift */,
+				2E4CFF801C2458E7001DE991 /* DefaultPaginableRequest.swift */,
+			);
+			path = Paginable;
+			sourceTree = "<group>";
+		};
+		2E4CFF861C245E0B001DE991 /* Request Query Composer */ = {
+			isa = PBXGroup;
+			children = (
+				2E4CFF871C245E0B001DE991 /* TMDBRequestQueryComposer.swift */,
+			);
+			path = "Request Query Composer";
+			sourceTree = "<group>";
+		};
+		2E4CFF891C245F27001DE991 /* Request Query Composer */ = {
+			isa = PBXGroup;
+			children = (
+				2E4CFF8A1C245F38001DE991 /* RequestQueryComposer.swift */,
+			);
+			path = "Request Query Composer";
+			sourceTree = "<group>";
+		};
 		2EEDBD581C21A2A800CE3F30 /* Data Sources */ = {
 			isa = PBXGroup;
 			children = (
+				2E4CFF861C245E0B001DE991 /* Request Query Composer */,
 				2EEDBD591C21A2A800CE3F30 /* TMDBMovieMediaServiceGetMovieByIdApiDataSource.swift */,
 				2EEDBD5A1C21A2A800CE3F30 /* TMDBMovieMediaServiceGetMoviesByModeApiDataSource.swift */,
 				2EEDBD5B1C21A2A800CE3F30 /* TMDBMovieMediaServiceSearchApiDataSource.swift */,
@@ -1155,8 +1197,10 @@
 				2E155F051C1DD2BC00F7DE18 /* Assembly+Formatters.swift in Sources */,
 				2E1D4B261C16858F00D474F0 /* TMDBMovieMediaServiceApiDefinition.swift in Sources */,
 				2E1D4AEC1C16687B00D474F0 /* HTTPRequestBuilder.swift in Sources */,
+				2E4CFF881C245E0B001DE991 /* TMDBRequestQueryComposer.swift in Sources */,
 				2E1D4AF01C16688F00D474F0 /* HTTPProcessor.swift in Sources */,
 				2E155F111C1F604C00F7DE18 /* TMDBMovieMediaServiceProductionCompanyApiParser.swift in Sources */,
+				2E4CFF7F1C2456E8001DE991 /* PaginableRequest.swift in Sources */,
 				2E8E22181C203A570027363D /* MovieProductionCountry.swift in Sources */,
 				2EEDBD5D1C21A2A800CE3F30 /* TMDBMovieMediaServiceGetMoviesByModeApiDataSource.swift in Sources */,
 				2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */,
@@ -1165,11 +1209,13 @@
 				2E8E221A1C203A8B0027363D /* TMDBMovieMediaServiceMovieProductionCountryApiToDomainMapper.swift in Sources */,
 				2E3A7D271C17006D00F62D62 /* Assembly+Parsers.swift in Sources */,
 				2E155F091C1F4F7400F7DE18 /* TMDBMovieApiModel.swift in Sources */,
+				2E4CFF7D1C2454C0001DE991 /* Paginable.swift in Sources */,
 				2EEDBD5C1C21A2A800CE3F30 /* TMDBMovieMediaServiceGetMovieByIdApiDataSource.swift in Sources */,
 				2E3A7D1D1C16FB6600F62D62 /* Assembly+Network.swift in Sources */,
 				2E155F171C1F613E00F7DE18 /* TMDBMovieProductionCountryApiModel.swift in Sources */,
 				2E155EEA1C1DBCB600F7DE18 /* Keys.swift in Sources */,
 				2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */,
+				2E4CFF811C2458E7001DE991 /* DefaultPaginableRequest.swift in Sources */,
 				2E3703B31C0E2515002E70A2 /* Assembly.swift in Sources */,
 				2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */,
 				2E1D4B1C1C16800E00D474F0 /* TMDBMovieMediaService.swift in Sources */,
@@ -1184,6 +1230,8 @@
 				2E155F151C1F610C00F7DE18 /* TMDBMovieProductionCompanyApiModel.swift in Sources */,
 				2E155EFF1C1DCFC200F7DE18 /* TMDBDateFormatter.swift in Sources */,
 				2E3A7D291C1700AE00F62D62 /* TMDBMovieMediaServiceSearchApiParser.swift in Sources */,
+				2E4CFF8B1C245F38001DE991 /* RequestQueryComposer.swift in Sources */,
+				2E4CFF7A1C2452D0001DE991 /* QueryParameters.swift in Sources */,
 				2E8E221E1C203B180027363D /* TMDBMovieMediaServiceMovieSpokenLanguageApiToDomainMapper.swift in Sources */,
 				2EEDBD5E1C21A2A800CE3F30 /* TMDBMovieMediaServiceSearchApiDataSource.swift in Sources */,
 				2E8E220E1C2036BE0027363D /* TMDBMovieMediaServiceMovieApiToDomainMapper.swift in Sources */,

@@ -27,7 +27,8 @@ extension Assembly: TMDBMovieMediaServiceSearchApiDataSourceProvider {
         return TMDBMovieMediaServiceSearchApiDataSource(
             httpClient: getTMDBHttpClient(),
             parser: getTMDBMovieMediaServiceSearchApiParser(),
-            mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper()
+            mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper(),
+            queryComposer: getTMDBRequestQueryComposer()
         )
     }
 }
@@ -53,7 +54,15 @@ extension Assembly: TMDBMovieMediaServiceGetMoviesByModeApiDataSourceProvider {
         return TMDBMovieMediaServiceGetMoviesByModeApiDataSource(
             httpClient: getTMDBHttpClient(),
             parser: getTMDBMovieMediaServiceSearchApiParser(),
-            mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper()
+            mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper(),
+            queryComposer: getTMDBRequestQueryComposer()
         )
+    }
+}
+
+extension Assembly {
+    
+    func getTMDBRequestQueryComposer() -> RequestQueryComposer {
+        return TMDBRequestQueryComposer()
     }
 }

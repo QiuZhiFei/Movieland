@@ -36,9 +36,10 @@ protocol MovieMediaService {
      Search for movies by title
      
      - parameter query:         movie title
+     - parameters:              extra parameters for filtering the movies
      - parameter searchResults: MovieMediaServiceSearchResult
      */
-    func search(query: String, searchResults: MovieMediaServiceSearchResult)
+    func search(query: String, parameters: QueryParameters?, searchResults: MovieMediaServiceSearchResult)
     
     /**
      Get the basic movie information for a specific movie id
@@ -52,8 +53,8 @@ protocol MovieMediaService {
      Get the list of movies by mode (popular, top rated, etc)
      
      - parameter mode:            MovieMediaServiceMode
+     - parameters:                extra parameters for filtering the movies
      - parameter movieListResult: MovieMediaServiceMovieListResult
      */
-    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult)
-    
+    func getMovies(mode: MovieMediaServiceMode, parameters: QueryParameters?, movieListResult: MovieMediaServiceMovieListResult)
 }

@@ -23,15 +23,15 @@ struct TMDBMovieMediaServiceRepository: MovieMediaService {
         self.getMoviesByModeDataSourceProvider = getMoviesByModeDataSourceProvider
     }
     
-    func search(query: String, searchResults: MovieMediaServiceSearchResult) {
-        searchDataSourceProvider.dataSource().search(query, searchResults: searchResults)
+    func search(query: String, parameters: QueryParameters?, searchResults: MovieMediaServiceSearchResult) {
+        searchDataSourceProvider.dataSource().search(query, parameters: parameters, searchResults: searchResults)
     }
     
     func getMovieById(movieId: String, movieResult: MovieMediaServiceMovieByIdResult) {
         getMovieByIdDataSourceProvider.dataSource().getMovieById(movieId, movieResult: movieResult)
     }
     
-    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult) {
-        getMoviesByModeDataSourceProvider.dataSource().getMovies(mode, movieListResult: movieListResult)
+    func getMovies(mode: MovieMediaServiceMode, parameters: QueryParameters?, movieListResult: MovieMediaServiceMovieListResult) {
+        getMoviesByModeDataSourceProvider.dataSource().getMovies(mode, parameters: parameters, movieListResult: movieListResult)
     }
 }

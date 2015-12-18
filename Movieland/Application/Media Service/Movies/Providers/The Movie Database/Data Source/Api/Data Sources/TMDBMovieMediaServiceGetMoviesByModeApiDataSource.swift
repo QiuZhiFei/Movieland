@@ -33,20 +33,28 @@ struct TMDBMovieMediaServiceGetMoviesByModeApiDataSource {
     let httpClient: HTTPClient
     let parser: Parseable
     let mapper: Mappable
+    let queryComposer: RequestQueryComposer
     
     init(httpClient: HTTPClient,
         parser: Parseable,
-        mapper: Mappable)
+        mapper: Mappable,
+        queryComposer: RequestQueryComposer)
     {
         self.httpClient = httpClient
         self.parser = parser
         self.mapper = mapper
+        self.queryComposer = queryComposer
     }
     
-    func getMovies(mode: MovieMediaServiceMode, movieListResult: MovieMediaServiceMovieListResult) {
+    func getMovies(mode: MovieMediaServiceMode, parameters: QueryParameters?, movieListResult: MovieMediaServiceMovieListResult) {
         
         let path = TMDBMovieMediaServiceApiDefinition.GetMoviesByMode(mode: mode.path).path
-        let request = httpClient.GET(path)
+        var request = httpClient.GET(path)
+        
+        request = queryComposer.compose(
+            request,
+            parameters: parameters
+        )
         
         httpClient.execute(request) { (requestResult) in
             
