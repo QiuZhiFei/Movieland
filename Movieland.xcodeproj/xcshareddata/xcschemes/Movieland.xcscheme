@@ -39,16 +39,6 @@
                ReferencedContainer = "container:Movieland.xcodeproj">
             </BuildableReference>
          </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E2C68101C0E22B400641874"
-               BuildableName = "MovielandUITests.xctest"
-               BlueprintName = "MovielandUITests"
-               ReferencedContainer = "container:Movieland.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
