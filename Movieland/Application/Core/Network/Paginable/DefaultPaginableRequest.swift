@@ -8,7 +8,7 @@
 
 import Foundation
 
-let DefaultPaginableRequestLimit = 10
+private let DefaultPaginableRequestLimit = 10
 
 struct DefaultPaginableRequest: PaginableRequest {
     
