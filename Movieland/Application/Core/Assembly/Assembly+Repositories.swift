@@ -28,7 +28,8 @@ extension Assembly: TMDBMovieMediaServiceSearchApiDataSourceProvider {
             httpClient: getTMDBHttpClient(),
             parser: getTMDBMovieMediaServiceSearchApiParser(),
             mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper(),
-            queryComposer: getTMDBRequestQueryComposer()
+            queryComposer: getTMDBRequestQueryComposer(),
+            paginatedResponseComposer: getTMDBPaginatedResponseComposer()
         )
     }
 }
@@ -55,7 +56,8 @@ extension Assembly: TMDBMovieMediaServiceGetMoviesByModeApiDataSourceProvider {
             httpClient: getTMDBHttpClient(),
             parser: getTMDBMovieMediaServiceSearchApiParser(),
             mapper: getTMDBMovieMediaServiceSearchApiToDomainMapper(),
-            queryComposer: getTMDBRequestQueryComposer()
+            queryComposer: getTMDBRequestQueryComposer(),
+            paginatedResponseComposer: getTMDBPaginatedResponseComposer()
         )
     }
 }
@@ -64,5 +66,23 @@ extension Assembly {
     
     func getTMDBRequestQueryComposer() -> RequestQueryComposer {
         return TMDBRequestQueryComposer()
+    }
+    
+    func getTMDBPaginatedResponseComposer() -> TMDBMovieResultPaginatedResponseComposer {
+        return TMDBMovieResultPaginatedResponseComposer(
+            parser: getTMDBPaginatedResponseApiParser(),
+            mapperProvider: self
+        )
+    }
+}
+
+// MARK: - TMDBPaginatedResponseApiToDomainModelMapperProvider
+
+extension Assembly: TMDBPaginatedResponseApiToDomainModelMapperProvider {
+    
+    func mapper(with items: [MovieSearchResult]) -> Mappable {
+        return TMDBPaginatedResponseApiToDomainModelMapper(
+            items: items
+        )
     }
 }

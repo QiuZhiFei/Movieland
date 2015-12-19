@@ -38,4 +38,8 @@ extension Assembly {
     func getTMDBMovieMediaServiceSpokenLanguageApiParser() -> Parseable {
         return TMDBMovieMediaServiceSpokenLanguageApiParser()
     }
+    
+    func getTMDBPaginatedResponseApiParser() -> Parseable {
+        return TMDBPaginatedResponseParser()
+    }
 }

@@ -10,8 +10,8 @@ import Foundation
 import Result
 
 typealias MovieMediaServiceMovieByIdResult = Result<Movie, NSError> -> ()
-typealias MovieMediaServiceSearchResult = Result<[MovieSearchResult], NSError> -> ()
-typealias MovieMediaServiceMovieListResult = Result<[MovieSearchResult], NSError> -> ()
+typealias MovieMediaServiceSearchResult = Result<PaginatedResponse<MovieSearchResult>, NSError> -> ()
+typealias MovieMediaServiceMovieListResult = Result<PaginatedResponse<MovieSearchResult>, NSError> -> ()
 
 /**
  - NowPlaying: Get the list of movies playing that have been, or are being released this week

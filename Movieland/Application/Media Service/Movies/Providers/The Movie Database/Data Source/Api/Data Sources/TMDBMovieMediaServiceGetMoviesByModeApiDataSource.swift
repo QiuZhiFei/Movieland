@@ -34,16 +34,19 @@ struct TMDBMovieMediaServiceGetMoviesByModeApiDataSource {
     let parser: Parseable
     let mapper: Mappable
     let queryComposer: RequestQueryComposer
+    let paginatedResponseComposer: TMDBMovieResultPaginatedResponseComposer
     
     init(httpClient: HTTPClient,
         parser: Parseable,
         mapper: Mappable,
-        queryComposer: RequestQueryComposer)
+        queryComposer: RequestQueryComposer,
+        paginatedResponseComposer: TMDBMovieResultPaginatedResponseComposer)
     {
         self.httpClient = httpClient
         self.parser = parser
         self.mapper = mapper
         self.queryComposer = queryComposer
+        self.paginatedResponseComposer = paginatedResponseComposer
     }
     
     func getMovies(mode: MovieMediaServiceMode, parameters: QueryParameters?, movieListResult: MovieMediaServiceMovieListResult) {
@@ -70,8 +73,13 @@ struct TMDBMovieMediaServiceGetMoviesByModeApiDataSource {
                 return self.mapper.mapObject(from: $0)
             }
             
+            let paginatedResponse = self.paginatedResponseComposer.paginate(
+                response,
+                items: mappedMovieList
+            )
+            
             movieListResult(
-                Result.Success(mappedMovieList)
+                Result.Success(paginatedResponse)
             )
         }
     }
