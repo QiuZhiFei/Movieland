@@ -37,7 +37,6 @@
 		2E1D4AF31C166A0900D474F0 /* AlamofireHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */; };
 		2E1D4AF51C166A1700D474F0 /* AlamofireHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */; };
 		2E1D4AF71C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */; };
-		2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */; };
 		2E1D4B081C1670DC00D474F0 /* Parseable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B071C1670DC00D474F0 /* Parseable.swift */; };
 		2E1D4B0A1C1670E800D474F0 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B091C1670E800D474F0 /* Model.swift */; };
 		2E1D4B0E1C16726300D474F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */; };
@@ -164,7 +163,6 @@
 		2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPClient.swift; sourceTree = "<group>"; };
 		2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequest.swift; sourceTree = "<group>"; };
 		2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPRequestBuilder.swift; sourceTree = "<group>"; };
-		2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireHTTPResponse.swift; sourceTree = "<group>"; };
 		2E1D4B071C1670DC00D474F0 /* Parseable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parseable.swift; sourceTree = "<group>"; };
 		2E1D4B091C1670E800D474F0 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		2E1D4B0D1C16726300D474F0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -395,7 +393,6 @@
 				2E1D4AF21C166A0900D474F0 /* AlamofireHTTPClient.swift */,
 				2E1D4AF41C166A1700D474F0 /* AlamofireHTTPRequest.swift */,
 				2E1D4AF61C166A2400D474F0 /* AlamofireHTTPRequestBuilder.swift */,
-				2E1D4AF81C166A3200D474F0 /* AlamofireHTTPResponse.swift */,
 			);
 			path = Alamofire;
 			sourceTree = "<group>";
@@ -1243,7 +1240,6 @@
 				2E155F191C1F61F400F7DE18 /* Parseable+Extended.swift in Sources */,
 				2E155EFB1C1DCEB700F7DE18 /* Formateable.swift in Sources */,
 				2E8E22101C2038FC0027363D /* MovieGenre.swift in Sources */,
-				2E1D4AF91C166A3200D474F0 /* AlamofireHTTPResponse.swift in Sources */,
 				2E155EF81C1DCC6E00F7DE18 /* MovieSearchResult.swift in Sources */,
 				2E155F0D1C1F5F9E00F7DE18 /* TMDBMovieGenreApiModel.swift in Sources */,
 				2E1D4B141C167BAA00D474F0 /* MovieMediaService.swift in Sources */,

@@ -28,7 +28,7 @@ class TMDBMovieResultPaginatedResponseComposerSpec: QuickSpec {
                 
                 let json: [String: AnyObject] = JSONLoader.fixture("single_paginated_movies")
                 
-                let httpResponse = HTTPResponseMock(
+                let httpResponse = HTTPResponse(
                     urlRequest: nil,
                     httpUrlResponse: nil,
                     data: nil,
@@ -57,13 +57,4 @@ class TMDBPaginatedResponseApiParserMock: Parseable {
         
         return Module().getTMDBPaginatedResponseApiModel() as! T
     }
-}
-
-struct HTTPResponseMock: HTTPResponse {
-    
-    var urlRequest: NSURLRequest?
-    var httpUrlResponse: NSHTTPURLResponse?
-    var data: NSData?
-    var error: NSError?
-    var json: [String: AnyObject]
 }

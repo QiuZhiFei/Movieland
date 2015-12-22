@@ -8,10 +8,11 @@
 
 import Foundation
 
-protocol HTTPResponse {
-    var urlRequest: NSURLRequest? { get }
-    var httpUrlResponse: NSHTTPURLResponse? { get }
-    var data: NSData? { get }
-    var error: NSError? { get }
-    var json: [String: AnyObject] { get }
+struct HTTPResponse {
+    
+    let urlRequest: NSURLRequest?
+    let httpUrlResponse: NSHTTPURLResponse?
+    let data: NSData?
+    let error: NSError?
+    let json: [String: AnyObject]
 }

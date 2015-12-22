@@ -75,7 +75,7 @@ class AlamofireHTTPClient: HTTPClient {
                         json = [:]
                     }
                     
-                    httpResponse = AlamofireHTTPReponse(
+                    httpResponse = HTTPResponse(
                         urlRequest: request,
                         httpUrlResponse: response,
                         data: data,
@@ -85,7 +85,7 @@ class AlamofireHTTPClient: HTTPClient {
                     
                 } else {
                     
-                    httpResponse = AlamofireHTTPReponse(
+                    httpResponse = HTTPResponse(
                         urlRequest: request,
                         httpUrlResponse: response,
                         data: data,
