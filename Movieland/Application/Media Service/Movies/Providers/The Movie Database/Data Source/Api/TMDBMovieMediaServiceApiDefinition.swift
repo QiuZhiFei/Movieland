@@ -16,6 +16,7 @@ enum TMDBMovieMediaServiceApiDefinition {
 }
 
 extension TMDBMovieMediaServiceApiDefinition {
+   
     var path: String {
         
         switch self {
