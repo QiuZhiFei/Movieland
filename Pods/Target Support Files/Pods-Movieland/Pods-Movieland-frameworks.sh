@@ -85,9 +85,13 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Movieland/Alamofire.framework"
+  install_framework "Pods-Movieland/Keys.framework"
   install_framework "Pods-Movieland/Result.framework"
+  install_framework "Pods-Movieland/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Movieland/Alamofire.framework"
+  install_framework "Pods-Movieland/Keys.framework"
   install_framework "Pods-Movieland/Result.framework"
+  install_framework "Pods-Movieland/SwiftyJSON.framework"
 fi

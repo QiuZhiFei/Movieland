@@ -42,23 +42,27 @@ struct AlamofireHTTPRequest: HTTPRequest {
     }
     
     func parameters(parameters: [String : AnyObject]) -> HTTPRequest {
+        let newParameters = self.parameters.union(parameters)
+        
         return AlamofireHTTPRequest(
             identifier: identifier,
             httpRequestMethod: httpRequestMethod,
             url: url,
-            parameters: parameters,
+            parameters: newParameters,
             headers: headers,
             body: body
         )
     }
     
     func headers(headers: [String : String]) -> HTTPRequest {
+        let newHeaders = self.headers.union(headers)
+        
         return AlamofireHTTPRequest(
             identifier: identifier,
             httpRequestMethod: httpRequestMethod,
             url: url,
             parameters: parameters,
-            headers: headers,
+            headers: newHeaders,
             body: body
         )
     }

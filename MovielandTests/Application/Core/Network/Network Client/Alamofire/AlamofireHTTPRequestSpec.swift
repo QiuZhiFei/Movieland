@@ -27,12 +27,32 @@ class AlamofireHTTPRequestSpec: QuickSpec {
                 expect(expectedValue).to(equal("sucks"))
             }
             
+            it("should add multiple parameters to the request while chaining request") {
+                let request = AlamofireHTTPRequest(httpRequestMethod: .GET, url: url).parameters(["xcode": "sucks"]).parameters(["sweet": "sugar"])
+                
+                let expectedValue1 = request.parameters["xcode"] as! String
+                let expectedValue2 = request.parameters["sweet"] as! String
+                
+                expect(expectedValue1).to(equal("sucks"))
+                expect(expectedValue2).to(equal("sugar"))
+            }
+            
             it("should add the correct headers to the request") {
                 let request = AlamofireHTTPRequest(httpRequestMethod: .GET, url: url).headers(["break": "free"])
                 
                 let expectedValue = request.headers["break"]
                 
                 expect(expectedValue).to(equal("free"))
+            }
+            
+            it("should add multiple headers to the request while chaining request") {
+                let request = AlamofireHTTPRequest(httpRequestMethod: .GET, url: url).headers(["xcode": "sucks"]).headers(["sweet": "sugar"])
+                
+                let expectedValue1 = request.headers["xcode"]
+                let expectedValue2 = request.headers["sweet"]
+       
+                expect(expectedValue1).to(equal("sucks"))
+                expect(expectedValue2).to(equal("sugar"))
             }
             
             it("should add the correct body to the request") {
