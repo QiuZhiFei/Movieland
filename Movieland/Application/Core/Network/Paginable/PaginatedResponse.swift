@@ -1,29 +1,27 @@
 //
-//  Paginable.swift
+//  PaginatedResponse.swift
 //  Movieland
 //
-//  Created by Oscar Duran on 18/12/15.
+//  Created by Oscar Duran on 19/12/15.
 //  Copyright © 2015 Skydev. All rights reserved.
 //
 
 import Foundation
 
-protocol Paginable {
-    
-    typealias T
+struct PaginatedResponse<T> {
     
     /// Get the current page for the request
-    var currentPage: Int { get }
+    let currentPage: Int
     
     /// Check if there are more pages to keep paginating
-    var hasNextPage: Bool { get }
+    let hasNextPage: Bool
     
     /// Get the total number of available pages
-    var totalPages: Int { get }
+    let totalPages: Int
     
     /// Get the total number of items in the collection
-    var totalResults: Int { get }
+    let totalResults: Int
     
     /// Get the items being paginated
-    var items: [T] { get }
+    let items: [T]
 }

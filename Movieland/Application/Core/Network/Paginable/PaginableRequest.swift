@@ -8,11 +8,22 @@
 
 import Foundation
 
-protocol PaginableRequest {
+private let DefaultPaginableRequestLimit = 10
+
+struct PaginableRequest {
     
     /// Get the page for the request
-    var page: Int { get }
+    let page: Int
     
     /// Get the amount of items to get for the page request
-    var limit: Int { get }
+    let limit: Int
+    
+    init(page: Int) {
+        self.init(page: page, limit: DefaultPaginableRequestLimit)
+    }
+    
+    init(page: Int, limit: Int) {
+        self.page = page
+        self.limit = DefaultPaginableRequestLimit
+    }
 }
