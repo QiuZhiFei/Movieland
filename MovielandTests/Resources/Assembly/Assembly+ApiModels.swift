@@ -65,4 +65,13 @@ extension Assembly {
         
         return movie
     }
+    
+    func getTMDBPaginatedResponseApiModel() -> TMDBPaginatedResponseApiModel {
+     
+        let parser = getTMDBPaginatedResponseApiParser()
+        let json: [String: AnyObject] = JSONLoader.fixture("single_paginated_movies")
+        let paginatedResponse: TMDBPaginatedResponseApiModel = parser.parse(json)
+        
+        return paginatedResponse
+    }
 }

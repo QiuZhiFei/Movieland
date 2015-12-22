@@ -30,7 +30,7 @@ class TMDBRequestQueryComposerSpec: QuickSpec {
                         url: url)
                     
                     let page = 5
-                    let pagination = DefaultPaginableRequest(page: page)
+                    let pagination = PaginableRequest(page: page)
                     let parameters = QueryParameters(
                         pagination: pagination
                     )
